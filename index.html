@@ -32,7 +32,7 @@
         }
 
         nav ul li a {
-            color: #fff;
+            color: #FFF; /* Changed link text color */
             text-decoration: none;
         }
 
@@ -104,8 +104,8 @@
     <header>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Products</a></li>
+                <li><a href="#" style="color: #FFF;">Home</a></li> <!-- Adjusted link color -->
+                <li><a href="#" style="color: #FFF;">Products</a></li> <!-- Adjusted link color -->
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
@@ -138,9 +138,12 @@
 
     <form>
         <h2>Contact Us</h2>
-        <input type="text" placeholder="Your Name">
-        <input type="email" placeholder="Your Email">
-        <textarea placeholder="Your Message"></textarea>
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your Name">
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your Email">
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" placeholder="Your Message"></textarea>
         <input type="submit" value="Submit">
     </form>
 
